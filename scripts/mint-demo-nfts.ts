@@ -13,7 +13,7 @@ function loadKeypair(path = "~/.config/solana/id.json") {
 
 async function main() {
   const rpcUrl = process.env.SOLANA_RPC_URL ?? "https://api.devnet.solana.com";
-  const programId = new PublicKey(process.env.SOLANA_PROGRAM_ID ?? "5vuLEQSXc7mwGWB7outYr36LyaPZU111Nrx4srpMhDSK");
+  const programId = new PublicKey(process.env.SOLANA_PROGRAM_ID ?? "J9TWXt5regfvpX9RSuBy7xSD1k8VTpRWMtBoMS7W1esw");
   const connection = new Connection(rpcUrl, "confirmed");
   const payer = loadKeypair(process.env.SOLANA_KEYPAIR_PATH);
   const [freezeAuthority] = freezeAuthorityPda(programId);
