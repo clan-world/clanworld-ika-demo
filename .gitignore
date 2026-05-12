@@ -12,6 +12,7 @@ coverage
 **/cache
 **/artifacts
 *.log
+docs/assets/.recordings
 terraform.tfstate*
 .terraform
 .terraform.lock.hcl

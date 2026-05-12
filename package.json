@@ -11,17 +11,22 @@
     "build": "pnpm -r --filter './packages/*' --filter './apps/*' --filter './contracts/*' build",
     "typecheck": "pnpm -r typecheck",
     "test": "tsx --test tests/*.test.ts",
+    "proof:manual": "tsx scripts/run-manual-proof.ts",
+    "demo:record": "tsx scripts/record-demo-video.ts",
     "review": "node scripts/review-project.mjs",
     "zip": "node scripts/zip-project.mjs"
   },
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
     "tsx": "^4.19.4",
     "typescript": "^5.9.0"
   },
   "dependencies": {
+    "@clanworld/base-sdk": "workspace:*",
     "@clanworld/solana-sdk": "workspace:*",
     "@solana/spl-token": "^0.4.14",
     "@solana/web3.js": "^1.98.4",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "viem": "^2.48.11"
   }
 }

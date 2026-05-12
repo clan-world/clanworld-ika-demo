@@ -1,0 +1,99 @@
+{
+  "generatedAtEastern": "May 12, 2026, 7:45:20 AM EDT",
+  "generatedAtIso": "2026-05-12T11:45:20.235Z",
+  "truthInAdvertising": "Real Solana devnet and Base Sepolia transactions. Base transactions are signed by fresh mock dWallet private keys because this repo's public Ika path is mock-backed.",
+  "networks": {
+    "solana": {
+      "cluster": "devnet",
+      "rpcUrl": "https://api.devnet.solana.com"
+    },
+    "base": {
+      "chain": "Base Sepolia",
+      "chainId": 84532,
+      "rpcUrl": "https://sepolia.base.org"
+    }
+  },
+  "solana": {
+    "programId": "J9TWXt5regfvpX9RSuBy7xSD1k8VTpRWMtBoMS7W1esw",
+    "manager": "DXmBfQsjzBmNYFSFMeR5zSVVHW4haPFmA4J1w7JQcni7",
+    "freezeAuthority": "2GxLCmVVK9HQx1V5CwM11zAZ3XkeKdTgD7PpuNsPhCUR",
+    "authority": "HNQNFdMoosi8X8drDzuhQ2sg8WJsPaoRRrJgvQDteXcW",
+    "gameId": "1778586315947",
+    "game": "Bhy4ftwYt2Gft2GQBfGQASZnm7jnt8r9JhVfftXv5nuZ",
+    "managerGameCounterAfterRun": "2",
+    "queueLenAfterRun": 0,
+    "blockedTransferError": "Simulation failed. \nMessage: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x11. \nLogs: \n[\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]\",\n  \"Program log: Error: Account is frozen\",\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 176 of 200000 compute units\",\n  \"Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x11\"\n]. \nCatch the `SendTransactionError` and call `getLogs()` on it for full d",
+    "startSignature": "5e9cfxnr3cREEco5q4264Daad4moMmR29ve8pHXRJi3NsaZ6b6Zx3xRrsqjdSwN74m6W7oEk8qwMReWG6a9Kvavw",
+    "endSignature": "4okb2QB3Gmx8s47CbrKfnecL5Ea1sk52sWYFmDLBqexG6vS4H1dhoaRTUmcgBPLYuPt4B2uAzrzLMVUaX4QWebVo"
+  },
+  "base": {
+    "contract": "0x6C34adEc077056512668723D4f90FDb62E6c736b",
+    "deployer": "0x02C4d76d0Ce17c6a81cD44C810167D79d99267c7",
+    "dWalletFunding": [
+      {
+        "to": "0x4c7C7AeD507651eC2b0fe91Df54c9C994bBCBF0c",
+        "hash": "0x1ffcaacfd0a8166d0bcf83ddbeccadd4d4f861b165d49d54e41fce7024b1b2e9"
+      },
+      {
+        "to": "0x3AFB1B91F1499E2228ff135241511e0613763fC1",
+        "hash": "0xc5226dded1eafd89230b14e5dae1b8a14234e40744fa832aaf3e2b3c7e9869b1"
+      }
+    ]
+  },
+  "agents": [
+    {
+      "label": "Agent 1",
+      "nftId": "1778586307",
+      "mint": "9CgXJy2iwFT8TJtnkvpicbLd3QAfqGiq4i2csE4yDm4P",
+      "tokenAccount": "HoEYLe6onsoHC7M4ebc58oxEcj7XgXeEhpjJ7MZWZq57",
+      "agentState": "2xN78b6mgZdH4PbFUdgib72o5MHQcETuVdqsd39caAWD",
+      "mockDWalletBaseAddress": "0x4c7C7AeD507651eC2b0fe91Df54c9C994bBCBF0c",
+      "mintSignature": "5A1kSVVmLKTMXhNiELoUS7JJfZPhkP3MeAH8F5iYaCvtYDbhJETioVdXQxusiYGGJBkdbkMWSRnXpphW9uVwmEBj",
+      "queueSignature": "3QscN1bEi3TXHsqzPDecnYLWPvu2FKPEZqKv6HtZA9fCBVp8MpfpwJ6H1E2MdEZ7jDRc8dVAREkaBXaD8R2YXP1w",
+      "approvalSignature": "2u1mCCX1LYT82WE7ALgqF5UuccHZjH2hsErQXbcG38gTLCRnjgRYU1qhBRf7FM4divbRYjZ3aK4PWiYrdp9Smtak",
+      "approvalAccount": "414tABdUx1b5u6uMtVXHs4YPVkHdN5fKkaeHLJExqFAP",
+      "txDigest": "0x738799a71585887012f598c58c446b8c0d4714a36e001b13c508de00ba4872fc",
+      "baseMintHash": "0x219aa27de7e7181f80f849af40405d1b9b80a38267a2a042c84e4bdc0da3b9af",
+      "baseRecordedWallet": "0x4c7C7AeD507651eC2b0fe91Df54c9C994bBCBF0c"
+    },
+    {
+      "label": "Agent 2",
+      "nftId": "1778586308",
+      "mint": "HxZcjnLdA5xhh3uZdxGN2H8kvHp7sfcCs6E3kkgA7CFe",
+      "tokenAccount": "3agxM3vAR2q9sqrgjzTCTLnQ5NobDB1tFxBcEkd87M2p",
+      "agentState": "BYKe64C2hu5TsiNPon9oPZ6ksPuAwtZtLCXcP5ARDbDk",
+      "mockDWalletBaseAddress": "0x3AFB1B91F1499E2228ff135241511e0613763fC1",
+      "mintSignature": "5Kj5qjvgNAkoH9xoPqUgPG8fMaixnTpMD49emj3T8VQvTEMuNnonQXQrr8AWkuTJhAoS3T7JThcuoySTTQrASqeG",
+      "queueSignature": "2QaNgA5bgL6hJcKffAqWkfb5CZm2bYVeTe7JwozyUeVcDwxwi4xbr6fgwXS6aGaCobtHsW3tQ2WNW6FKTHdDbC53",
+      "approvalSignature": "4WSZVABdNiLUoGgHe7GUDtmBGp2EKg2Ns1uWWV1vxfKAX4mXEKMgZuMBJpDRvppZxH7tAhCCSMYsp5xkdhjnpqpt",
+      "approvalAccount": "96PFAfx74ihPUV4knbZiKP6b8NR49vfLCkD9Xud1ZYeu",
+      "txDigest": "0x50d066a7feedd4aab55367a9924f4c678442d79457fc05e794bb0d859ccc51e3",
+      "baseMintHash": "0xcfa6a190230e7ba14d18f7d2cd1b7cf688bb10a01c4abc32bfb51f8b206e05d6",
+      "baseRecordedWallet": "0x3AFB1B91F1499E2228ff135241511e0613763fC1"
+    }
+  ],
+  "explorerLinks": {
+    "solanaProgram": "https://explorer.solana.com/address/J9TWXt5regfvpX9RSuBy7xSD1k8VTpRWMtBoMS7W1esw?cluster=devnet",
+    "solanaManager": "https://explorer.solana.com/address/DXmBfQsjzBmNYFSFMeR5zSVVHW4haPFmA4J1w7JQcni7?cluster=devnet",
+    "solanaGame": "https://explorer.solana.com/address/Bhy4ftwYt2Gft2GQBfGQASZnm7jnt8r9JhVfftXv5nuZ?cluster=devnet",
+    "startGame": "https://explorer.solana.com/tx/5e9cfxnr3cREEco5q4264Daad4moMmR29ve8pHXRJi3NsaZ6b6Zx3xRrsqjdSwN74m6W7oEk8qwMReWG6a9Kvavw?cluster=devnet",
+    "endGame": "https://explorer.solana.com/tx/4okb2QB3Gmx8s47CbrKfnecL5Ea1sk52sWYFmDLBqexG6vS4H1dhoaRTUmcgBPLYuPt4B2uAzrzLMVUaX4QWebVo?cluster=devnet",
+    "baseContract": "https://sepolia.basescan.org/address/0x6C34adEc077056512668723D4f90FDb62E6c736b",
+    "agents": [
+      {
+        "mint": "https://explorer.solana.com/address/9CgXJy2iwFT8TJtnkvpicbLd3QAfqGiq4i2csE4yDm4P?cluster=devnet",
+        "tokenAccount": "https://explorer.solana.com/address/HoEYLe6onsoHC7M4ebc58oxEcj7XgXeEhpjJ7MZWZq57?cluster=devnet",
+        "queue": "https://explorer.solana.com/tx/3QscN1bEi3TXHsqzPDecnYLWPvu2FKPEZqKv6HtZA9fCBVp8MpfpwJ6H1E2MdEZ7jDRc8dVAREkaBXaD8R2YXP1w?cluster=devnet",
+        "approval": "https://explorer.solana.com/tx/2u1mCCX1LYT82WE7ALgqF5UuccHZjH2hsErQXbcG38gTLCRnjgRYU1qhBRf7FM4divbRYjZ3aK4PWiYrdp9Smtak?cluster=devnet",
+        "baseMint": "https://sepolia.basescan.org/tx/0x219aa27de7e7181f80f849af40405d1b9b80a38267a2a042c84e4bdc0da3b9af"
+      },
+      {
+        "mint": "https://explorer.solana.com/address/HxZcjnLdA5xhh3uZdxGN2H8kvHp7sfcCs6E3kkgA7CFe?cluster=devnet",
+        "tokenAccount": "https://explorer.solana.com/address/3agxM3vAR2q9sqrgjzTCTLnQ5NobDB1tFxBcEkd87M2p?cluster=devnet",
+        "queue": "https://explorer.solana.com/tx/2QaNgA5bgL6hJcKffAqWkfb5CZm2bYVeTe7JwozyUeVcDwxwi4xbr6fgwXS6aGaCobtHsW3tQ2WNW6FKTHdDbC53?cluster=devnet",
+        "approval": "https://explorer.solana.com/tx/4WSZVABdNiLUoGgHe7GUDtmBGp2EKg2Ns1uWWV1vxfKAX4mXEKMgZuMBJpDRvppZxH7tAhCCSMYsp5xkdhjnpqpt?cluster=devnet",
+        "baseMint": "https://sepolia.basescan.org/tx/0xcfa6a190230e7ba14d18f7d2cd1b7cf688bb10a01c4abc32bfb51f8b206e05d6"
+      }
+    ]
+  }
+}
