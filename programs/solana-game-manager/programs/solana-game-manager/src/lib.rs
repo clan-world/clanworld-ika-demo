@@ -3,7 +3,7 @@ use anchor_spl::token::{self, FreezeAccount, Mint, ThawAccount, Token, TokenAcco
 
 const MAX_QUEUE: usize = 12;
 
-declare_id!("5vuLEQSXc7mwGWB7outYr36LyaPZU111Nrx4srpMhDSK");
+declare_id!("J9TWXt5regfvpX9RSuBy7xSD1k8VTpRWMtBoMS7W1esw");
 
 #[program]
 pub mod solana_game_manager {

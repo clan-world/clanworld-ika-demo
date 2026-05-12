@@ -6,10 +6,10 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-solana_game_manager = "5vuLEQSXc7mwGWB7outYr36LyaPZU111Nrx4srpMhDSK"
+solana_game_manager = "J9TWXt5regfvpX9RSuBy7xSD1k8VTpRWMtBoMS7W1esw"
 
 [programs.devnet]
-solana_game_manager = "5vuLEQSXc7mwGWB7outYr36LyaPZU111Nrx4srpMhDSK"
+solana_game_manager = "J9TWXt5regfvpX9RSuBy7xSD1k8VTpRWMtBoMS7W1esw"
 
 [registry]
 url = "https://api.apr.dev"
