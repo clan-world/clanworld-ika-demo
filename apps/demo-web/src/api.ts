@@ -1,6 +1,6 @@
 import type { DemoState } from "@clanworld/core";
 
-const API_URL = import.meta.env.VITE_DEMO_API_URL ?? "http://localhost:8787";
+const API_URL = import.meta.env.VITE_DEMO_API_URL ?? (import.meta.env.DEV ? "http://localhost:8787" : "");
 
 async function post<T>(path: string, body: Record<string, unknown> = {}): Promise<T> {
   const response = await fetch(`${API_URL}${path}`, {
