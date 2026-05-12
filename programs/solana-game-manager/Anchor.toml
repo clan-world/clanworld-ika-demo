@@ -1,0 +1,22 @@
+[toolchain]
+anchor_version = "0.32.1"
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+solana_game_manager = "5vuLEQSXc7mwGWB7outYr36LyaPZU111Nrx4srpMhDSK"
+
+[programs.devnet]
+solana_game_manager = "5vuLEQSXc7mwGWB7outYr36LyaPZU111Nrx4srpMhDSK"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "pnpm tsx tests/solana-game-manager.ts"

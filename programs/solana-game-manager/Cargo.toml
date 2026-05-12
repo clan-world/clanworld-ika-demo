@@ -1,0 +1,8 @@
+[workspace]
+members = ["programs/solana-game-manager"]
+resolver = "2"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1

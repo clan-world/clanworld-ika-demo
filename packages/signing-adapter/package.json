@@ -1,0 +1,27 @@
+{
+  "name": "@clanworld/signing-adapter",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@clanworld/core": "workspace:*",
+    "@clanworld/ika-sdk": "workspace:*",
+    "viem": "^2.31.0",
+    "@clanworld/config": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  },
+  "optionalDependencies": {
+    "@ika.xyz/pre-alpha-solana-client": "^0.1.1",
+    "@ika.xyz/sdk": "latest"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules
+.pnpm-store
+.env
+.env.*
+!.env.example
+dist
+build
+coverage
+.DS_Store
+.anchor
+**/target
+**/cache
+**/artifacts
+*.log
+terraform.tfstate*
+.terraform
+.terraform.lock.hcl

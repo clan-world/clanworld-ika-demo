@@ -1,0 +1,25 @@
+{
+  "name": "@clanworld/base-clan-game",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/compile-local.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "pnpm build && hardhat test --no-compile",
+    "deploy:base-sepolia": "pnpm build && hardhat run --no-compile scripts/deploy.ts --network baseSepolia"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.19",
+    "solc": "^0.8.30"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "typescript": "^5.9.0"
+  }
+}

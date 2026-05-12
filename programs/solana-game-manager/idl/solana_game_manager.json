@@ -1,0 +1,11 @@
+{
+  "address": "5vuLEQSXc7mwGWB7outYr36LyaPZU111Nrx4srpMhDSK",
+  "metadata": { "name": "solana_game_manager", "version": "0.1.0", "spec": "0.1.0" },
+  "instructions": [
+    { "name": "initialize", "discriminator": [175,175,109,31,13,152,155,237], "accounts": [], "args": [ { "name": "authority", "type": "pubkey" }, { "name": "baseContract", "type": { "array": ["u8",20] } } ] },
+    { "name": "queueAgent", "discriminator": [103,148,88,164,91,135,48,34], "accounts": [], "args": [ { "name": "nftId", "type": "u64" }, { "name": "dwalletId", "type": { "array": ["u8",32] } }, { "name": "baseAddress", "type": { "array": ["u8",20] } } ] },
+    { "name": "startGame", "discriminator": [249,47,252,172,184,162,245,14], "accounts": [], "args": [ { "name": "gameId", "type": "u64" } ] },
+    { "name": "approveBaseAction", "discriminator": [171,80,134,111,85,147,161,199], "accounts": [], "args": [ { "name": "txDigest", "type": { "array": ["u8",32] } }, { "name": "nonce", "type": "u64" }, { "name": "baseContract", "type": { "array": ["u8",20] } } ] },
+    { "name": "endGame", "discriminator": [224,135,245,99,67,175,121,252], "accounts": [], "args": [] }
+  ]
+}
