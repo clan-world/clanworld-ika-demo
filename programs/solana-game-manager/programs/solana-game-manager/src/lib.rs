@@ -198,7 +198,7 @@ pub struct QueueAgent<'info> {
 pub struct StartGame<'info> {
     #[account(mut, seeds = [b"game-manager"], bump = manager.bump)]
     pub manager: Account<'info, GameManager>,
-    #[account(init, payer = authority, space = 8 + GameState::SPACE, seeds = [b"game", &game_id.to_le_bytes()], bump)]
+    #[account(init, payer = authority, space = 8 + GameState::SPACE, seeds = [b"game", game_id.to_le_bytes().as_ref()], bump)]
     pub game: Account<'info, GameState>,
     #[account(mut)]
     pub authority: Signer<'info>,
@@ -226,10 +226,11 @@ pub struct StartGame<'info> {
 pub struct ApproveBaseAction<'info> {
     #[account(seeds = [b"game-manager"], bump = manager.bump)]
     pub manager: Account<'info, GameManager>,
+    #[account(mut)]
     pub authority: Signer<'info>,
     pub game: Account<'info, GameState>,
     pub agent: Account<'info, AgentState>,
-    #[account(init, payer = authority, space = 8 + BaseActionApproval::SPACE, seeds = [b"approval", game.key().as_ref(), agent.key().as_ref(), &nonce.to_le_bytes()], bump)]
+    #[account(init, payer = authority, space = 8 + BaseActionApproval::SPACE, seeds = [b"approval", game.key().as_ref(), agent.key().as_ref(), nonce.to_le_bytes().as_ref()], bump)]
     pub approval: Account<'info, BaseActionApproval>,
     pub system_program: Program<'info, System>,
 }
